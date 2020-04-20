@@ -70,7 +70,7 @@ public abstract class FullVideoRecorder extends VideoRecorder {
         // A possible solution was to prepare without checking DeviceEncoders first, and should it
         // fail, prepare again checking them. However, when parameters are wrong, MediaRecorder
         // fails on start() instead of prepare() (start failed -19), so this wouldn't be effective.
-        return prepareMediaRecorder(stub, true);
+        return prepareMediaRecorder(stub, false);
     }
 
     @SuppressWarnings("SameParameterValue")
